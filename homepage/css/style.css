@@ -160,6 +160,7 @@
     .footer-container {
         background-color: #87AFE1ff;
         padding: 2rem 0;
+        
     }
     
 
@@ -176,6 +177,7 @@
         margin: 0 auto;
         position: sticky;
         bottom: 0;
+
     }
 
     /*footer organization*/
@@ -192,7 +194,8 @@
         text-decoration: none;
         margin-right: 2rem;
         font-size: 16px;
-        word-spacing: 10px;
+        word-spacing: 6px;
+        
     }
     
     
@@ -200,13 +203,14 @@
 
     /*hover color footer*/
     .footer-info a:hover {
-        color: rgb(118, 173, 240);
+        color: rgb(195, 221, 253);
+        background-color: #87AFE1ff;
         transition: 0.1s ease-out;
     }
     
 
     .unorderd_list{
-        font-size: medium;
+        font-size: larger;
         word-spacing: 2px;
         width: 600px;
         margin: 2em; 
