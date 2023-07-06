@@ -1,73 +1,53 @@
-    
-    /* body and everything*/
-
-    *
-    {
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    }
-
-    body
-    {
-        background-color: #4BA3C9ff;
-        font-family: 'Kanit', sans-serif;
-    }
-
-    /* nav and header */
-
-    nav
-    {
+  }
+  
+  
+  /* Header CSS -------------------------------- */
+  nav {
     background: #F0F5F7ff;
     height: 80px;
     width: 100%;
-
-    }
-
-    label.logo
-    {
-    color:  #87AFE1ff;
+  }
+  
+  label.logo {
+    color: #87AFE1ff;
     font-size: 35px;
     line-height: 80px;
     padding: 0 100px;
     font-weight: bold;
-    }
-
-    nav ul
-    {
+  }
+  
+  nav ul {
     float: right;
     margin-right: 20px;
-
-
-    }
-
-    nav ul li
-    {
+  }
+  
+  nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-    }
-
-    nav ul li a
-    {
+  }
+  
+  nav ul li a {
     color: #87AFE1ff;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
-    }
-
-    a.active,a:hover
-    {
+  }
+  
+  a.active,
+  a:hover {
     background: rgb(209, 226, 247);
     transition: 0.5s;
-
-    }
-
-    .checkbtn
-    {
+  }
+  
+  .checkbtn {
     font-size: 30px;
     color: black;
     float: right;
@@ -75,88 +55,143 @@
     margin-right: 40px;
     cursor: pointer;
     display: none;
-
-    }
-
-    #check
-    {
+  }
+  
+  #check {
     display: none;
+  }
+  
+  .logo, .fab, .fa-linkedin, .fa-instagram, .fa-github 
+  {
+      color: #87AFE1ff;
+      
+  }
+
+  
+  /* Body CSS---------------------------------- */
+
+  body {
+    background-color: #b7c9e2;
+    font-family: 'Kanit', sans-serif;
+    background-color: #6A717Eff;
+  }
+
+  
+  
+  
+  /* Footer CSS----------------------------- */
+    /*footer basics/alignment*/
+  .footer-container {
+    background-color: #87AFE1ff;
+    padding: 2rem 0;
+      
+  }
+  
+
+  /*footer basics*/
+  .footer
+  {
+    width: 80%;
+    height: 3vh;
+    background-color: #87AFE1ff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: sticky;
+    bottom: 0;
+
+  }
+
+  /*footer organization*/
+  .footer-info
+  {
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+  }
+
+  .footer-info a {
+    color: white;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 16px;
+    word-spacing: 6px;
+      
+  }
+  
+  .footer-info a:hover {
+    color: rgb(195, 221, 253);
+    background-color: #87AFE1ff;
+    transition: 0.1s ease-out;
+  }
+  
+
+  .unorderd_list{
+    font-size: larger;
+    word-spacing: 2px;
+    width: 600px;
+    margin: 2em; 
+  }
+
+
+
+
+  /* media ------------------------------*/
+
+  /* Media Queries */
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
     }
-
-    @media (max-width: 952px)
-    {
-    label.logo
-    {
-        font-size: 30px;
-        padding-left: 50px;
-
+    nav ul li a {
+      font-size: 16px;
     }
-    nav ul li a
-    {
-        font-size: 16px;
+  }
+  
+  @media (max-width: 50px) {
+    .checkbtn {
+      display: block;
     }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #87AFE1ff;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
     }
-
-    @media (max-width: 300px)
-    {
-    .checkbtn
-    {
-        display: block;
-
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
     }
-
-    ul
-    {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background: pink;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
+    nav ul li a {
+      font-size: 20px;
     }
-
-    nav ul li
-    {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    a:hover,
+    a.active {
+      background: none;
+      color: #87AFE1ff;
     }
-
-    nav ul li a
-    {
-        font-size: 20px;
+    #check:checked~ul {
+      left: 0px;
     }
+  }
 
-    a:hover,a.active
-    {
-        background: none;
-        color: pink;
+  @media only screen and (max-width: 500px) {
+    .masthead {
+      padding: 3em 0;
     }
-
-    #check:checked ~ ul
-    {
-        left: 0px;
+    .masthead-heading {
+      font-size: 3em;
     }
+    .content-footer {
+      padding: 2em 2.5em;
     }
-
-    .logo, .fab, .fa-linkedin, .fa-instagram, .fa-github 
-    {
-        color: #87AFE1ff;
-        
-    }
-
-    /* main section */
-
-    .codeLists
-    {
-        text-align: center;
-        margin-left: 10px;
-        font-size: 30px;
-        margin-top: 30px;
-
-    }
-
-
-    
+  }
+  

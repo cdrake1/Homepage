@@ -62,6 +62,11 @@
     display: none;
   }
   
+  .logo, .fab, .fa-linkedin, .fa-instagram, .fa-github 
+  {
+      color: #87AFE1ff;
+      
+  }
 
   
   /* Body CSS---------------------------------- */
@@ -72,120 +77,21 @@
     background-color: #6A717Eff;
   }
 
-  .logo,
-  .fab,
-  .fa-linkedin,
-  .fa-instagram,
-  .fa-github {
-    color: #87AFE1ff;
-  }
-  
-  .content-footer,
-  .masthead-heading,
-  .masthead-intro {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .masthead {
-    padding: 6em 0;
-    background-image: url(../images/background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: 'Kanit', sans-serif;
-    font-size: 10pxem;
-  }
-  
-  .masthead-heading {
-    color: #87AFE1ff;
-    margin-top: -0.2px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-  }
-  
-  .introduction-section {
-    max-width: 500px;
-  margin-left: auto;
-    margin-right: auto;
-    margin-top: 2px;
-  }
-  
-  .introduction-section > p,
-  .content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-  }
-  
-  section > h1 {
-    margin-top: 2em;
-  }
-  
-  .content-footer,
-  .masthead-heading,
-  .masthead-intro {
-    text-align: center;
-  }
-  
-  .masthead-intro {
-    margin-bottom: 0.1em;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-  }
-  
-  .masthead-heading {
-    margin-top: -0.2em;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-  }
-  
-  .introduction > p,
-  .content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-  }
-  
-  h2 {
-    /* Typography Declarations */
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  .content-footer {
-    padding: 20px 0;
-    text-align: center;
-    background-color: #87AFE1ff;
-    text-decoration: none;
-  }
-  
-  .content-footer > p {
-    color: #F7EDE1;
-  }
-  
-  a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #87AFE1ff;
-  }
   
   
   
   /* Footer CSS----------------------------- */
+    /*footer basics/alignment*/
   .footer-container {
     background-color: #87AFE1ff;
     padding: 2rem 0;
+      
   }
   
-  .footer {
+
+  /*footer basics*/
+  .footer
+  {
     width: 80%;
     height: 3vh;
     background-color: #87AFE1ff;
@@ -196,20 +102,24 @@
     margin: 0 auto;
     position: sticky;
     bottom: 0;
+
   }
-  
-  .footer-info {
+
+  /*footer organization*/
+  .footer-info
+  {
     display: flex;
     flex-direction: row;
     margin-right: 2rem;
   }
-  
+
   .footer-info a {
     color: white;
     text-decoration: none;
     margin-right: 2rem;
     font-size: 16px;
     word-spacing: 6px;
+      
   }
   
   .footer-info a:hover {
@@ -218,12 +128,14 @@
     transition: 0.1s ease-out;
   }
   
-  .unorderd_list {
+
+  .unorderd_list{
     font-size: larger;
     word-spacing: 2px;
     width: 600px;
-    margin: 2em;
+    margin: 2em; 
   }
+
 
 
 
