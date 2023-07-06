@@ -76,6 +76,52 @@
     font-family: 'Kanit', sans-serif;
     background-color: #6A717Eff;
   }
+  
+  .name-intro {
+    text-align: center;
+    margin: 3em;
+    font-size: 3em;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+  }
+  
+  .pic-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pic-content img {
+    margin: 2em;
+    border-radius: 5px;
+    height: 500px;
+  }
+  
+  .text-content {
+    flex-grow: 1;
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 5em;
+  }
+  
+  .text-content h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  .text-content p {
+    font-size: 1.5em;
+  }
+  
+  
+
+
+  
 
   
   
